@@ -1,0 +1,14 @@
+useDynLib(VBGF)
+
+import("methods")
+import("ggplot2")
+import("FLCore")
+import("ggplotFL")
+import("FLBRP")
+import("FLasher")
+importFrom("metR", "geom_contour2")
+
+export(VBGF)
+export(sel)
+
+exportPattern("^[[:alpha:]]+")

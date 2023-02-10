@@ -1,0 +1,29 @@
+Package: FLSelex2
+Title: Package for selectivity analyses
+Version: 0.0.1
+Authors@R: 
+ c(
+   person("Michael", "Gras", email = "michael.gras@ymail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-9572-8456")),
+   person("European Commission", role = c("fnd", "cph")),
+   person("Henning", "Winker", email = "henning.winker@gmail.com", role = c("aut"))
+ )
+Description: Selectivity analyses
+X-schema.org-keywords: selectivity, age-structured models
+License: EUPL
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Depends:
+    R (>= 3.5),
+    ggplot2,
+    FLCore,
+    ggplotFL,
+    FLBRP,
+    FLasher,
+    FLife
+Imports: 
+  TMB
+LinkingTo: 
+  TMB,
+  RcppEigen
