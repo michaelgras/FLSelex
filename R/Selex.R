@@ -50,7 +50,7 @@ return(Se)
 #' @return FLPar with the VBGF parameters  
 #' @export
 
-fit.VBGF <- function(age, length){
+VBGF <- function(age, length){
   dyn.load(dynlib("vonBertalanffy/cpp/VBGF"))
 obj <- MakeADFun(data = list(length = length, age = age), parameters = list(Linf = 400, K = .3,T = 0 ,LogSigma = 0), DLL = "VBGF") 
 
